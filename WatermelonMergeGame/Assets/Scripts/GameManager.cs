@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private FruitObjectSetting setting;
 
-    private bool isClick => Input.GetMouseButton(0);
+    private bool isClick => Input.GetMouseButtonDown(0);
     private Vector2Int fruitRange = new Vector2Int(0, 4);
    
     void Start()
